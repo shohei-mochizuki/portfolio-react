@@ -8,7 +8,10 @@ function Navbar() {
   // TODO: Add a style attribute to `nav`
   return (
     <nav className="navbar">
-      <a href="/">Welcome</a>
+      <a href="/">About</a>
+      <a href="/">Works</a>
+      <a href="/">Contact</a>
+      <a href="/">Resume</a>
     </nav>
   );
 }
