@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header({ currentPage, handlePageChange }) {
+export default function Header({ currentPage, handlePageChange }) {
   return (
     <div>
       <h1>Shohei Mochizuki</h1>
@@ -37,5 +37,3 @@ function Header({ currentPage, handlePageChange }) {
     </div>
   );
 }
-
-export default Header;
