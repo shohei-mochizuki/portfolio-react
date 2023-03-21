@@ -1,17 +1,14 @@
 import React from 'react';
+import facePhoto from '../../images/shohei.jpg';
 
 export default function About() {
   return (
     <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+      <img src={facePhoto} alt="Shohei" height={"200px"}/>
+      <h5>Hello World 🌎 ! I'm</h5>
+      <h2>Shohei Mochizuki</h2>
+      <p><small >Pronunciation: show-hay moe-chee-zoo-key | Pronuous: he/his/him</small></p>
+      <p>A full stack web developer with 8 years of working experience in data analytics and engineering fields. Love solving issues with other people and working in a diverse environment.</p>
     </div>
   );
 }
