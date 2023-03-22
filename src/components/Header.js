@@ -1,13 +1,14 @@
 import React from 'react';
+import logoSite from '../images/website.png'
 
 export default function Header({ currentPage, handlePageChange }) {
   return (
-    <div className="px-4">
-      <nav className="navbar navbar-expand-lg bg-primary">
+    <div>
+      <nav className="navbar navbar-expand-md bg-primary px-3">
         <div className="container-fluid">
           <a className="navbar-brand" href="#home">
-            <img src="./assets/images/logo.png" width="30" height="30" className="d-inline-block align-text-bottom" alt="" />
-            <span className="fs-3 fw-semibold ms-1">Shohei Mochizuki</span>
+            <img src={logoSite} width="30" height="30" className="d-inline-block align-text-bottom" alt="" />
+            <span className="fs-3 fw-semibold ms-2 text-white">Shohei Mochizuki</span>
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -18,7 +19,7 @@ export default function Header({ currentPage, handlePageChange }) {
                 <a 
                   href="#aboutme"
                   onClick={() => handlePageChange('AboutMe')}
-                  className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
+                  className={currentPage === 'AboutMe' ? 'nav-link active text-white' : 'nav-link text-white'}
                   aria-current="page"
                 >About Me</a>
               </li>
@@ -26,7 +27,7 @@ export default function Header({ currentPage, handlePageChange }) {
               <a 
                   href="#portfolio"
                   onClick={() => handlePageChange('Portfolio')}
-                  className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                  className={currentPage === 'Portfolio' ? 'nav-link active text-white' : 'nav-link text-white'}
                   aria-current="page"
                 >Portfolio</a>
               </li>
@@ -34,7 +35,7 @@ export default function Header({ currentPage, handlePageChange }) {
               <a 
                   href="#contact"
                   onClick={() => handlePageChange('Contact')}
-                  className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                  className={currentPage === 'Contact' ? 'nav-link active text-white' : 'nav-link text-white'}
                   aria-current="page"
                 >Contact</a>
               </li>
@@ -42,7 +43,7 @@ export default function Header({ currentPage, handlePageChange }) {
               <a 
                   href="#resume"
                   onClick={() => handlePageChange('Resume')}
-                  className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                  className={currentPage === 'Resume' ? 'nav-link active text-white' : 'nav-link text-white'}
                   aria-current="page"
                 >Resume</a>
               </li>
@@ -53,37 +54,3 @@ export default function Header({ currentPage, handlePageChange }) {
     </div>
     );
 };
-    
-    {/* <div>
-      <h1>Shohei Mochizuki</h1>
-      <ul className="nav nav-tabs">
-        <li className="nav-item">
-          <a
-            href="#aboutme"
-            onClick={() => handlePageChange('AboutMe')}
-            className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
-          >About Me</a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#portfolio"
-            onClick={() => handlePageChange('Portfolio')}
-            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-          >Portfolio</a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#contact"
-            onClick={() => handlePageChange('Contact')}
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-          >Contact</a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#resume"
-            onClick={() => handlePageChange('Resume')}
-            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-          >Resume</a>
-        </li>
-      </ul>
-    </div> */}
