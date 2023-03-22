@@ -1,24 +1,23 @@
 import React from 'react';
-import facePhoto from '../../images/shohei.jpg';
+import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 
 export default function Navigation({currentPage}) {
-  
-    const renderPage = () => {
-      switch (currentPage){
-        case "About": 
-          return <About />
-          break;
-        case "Works":
-          return <Works />
-          break;
-        case "Contact":
-          return <Contact />
-      }
-    };
+
+  const renderPage = (currentPage) => {
+    if (currentPage === "AboutMe") {
+      return <AboutMe />
+    } else if (currentPage === "Portfolio") {
+      return <Portfolio />
+    } else {
+      return <Contact />
+    }
+  };
   
   return (
     <div>
-      {renderPage}
+      {renderPage(currentPage)}
     </div>
   );
 }

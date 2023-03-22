@@ -4,6 +4,7 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 
 export default function PortfolioContainer() {
+
   const [currentPage, setCurrentPage] = useState('About'); // Set the About page as landing page
 
   const handlePageChange = (page) => setCurrentPage(page);
