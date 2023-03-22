@@ -25,14 +25,17 @@ import logoTableau from '../../images/tableau.png';
 
 export default function Resume() {
   return (
-    <div>
+    <div className="container my-5">
       <h2>Resume & Skills</h2>
-      <h3>Resume</h3>      
-      <button><a href={resume}>Resume</a></button>
+      <div className="m-5 d-flex justify-content-center">    
+        <button type="button" className="btn btn-secondary">
+          <a href={resume} className="text-reset text-decoration-none">Resume</a>
+        </button>
+      </div>
       <h3>Coding skills</h3>
       <div className="m-5 p-5 bg-light rounded-5">
         <div className="container text-center">
-          <div className="row row-cols-lg-4 row-cols-3">
+          <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2">
             <div className="col my-4">
               <img src={logoHtml} width="50" height="50" />
               <p>HTML</p>
@@ -94,7 +97,7 @@ export default function Resume() {
               <p>VS Code</p>
             </div>
             <div className="col my-4">
-              <img src={logoPwa} width="70" height="50" />
+              <img src={logoPwa} width="70" height="45" />
               <p>PWA</p>
             </div>
           </div>
@@ -103,7 +106,7 @@ export default function Resume() {
       <h3>Data analytics skills</h3>
       <div className="m-5 p-5 bg-light rounded-5">
         <div className="container text-center">
-          <div className="row row-cols-lg-4 row-cols-3">
+          <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2">
             <div className="col my-4">
               <img src={logoPython} width="50" height="50" />
               <p>Python</p>
@@ -130,11 +133,9 @@ export default function Resume() {
             </div>
           </div>
         </div>
-      </div>
-        
-      
+      </div>    
       <h3>Other skills</h3>
-      <div>
+      <div className="m-5 p-5 bg-light rounded-5 fs-5">
         <ul>
           <li>Project management</li>
           <li>Communication</li>
@@ -146,7 +147,7 @@ export default function Resume() {
         </ul>
       </div>
       <h3>Languages</h3>
-      <div>
+      <div className="m-5 p-5 bg-light rounded-5 fs-5">
         <ul>
           <li>🇬🇧 English: Fluent</li>
           <li>🇫🇷 French: Professional</li>
