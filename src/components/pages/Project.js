@@ -1,14 +1,14 @@
 import React from 'react';
-import facePhoto from '../../images/shohei.jpg';
+import githubLogo from "../../images/github.svg"
 
-export default function Project() {
+export default function Project({imgSrc, imgAlt, hrefDeploy, hrefGitHub}) {
   return (
     <div>
-        <img src={pjTravelerReview} alt="LinkedIn logo" height={"300px"}/>
-        <a href="https://www.yahoo.co.jp/">Traveler's Choice</a>
-        <a href="https://github.com/shohei-mochizuki/TravelersChoice">
-          <img src={githubLogo} alt="GitHub logo" height={"40px"}/>
-        </a>
+      <img src={imgSrc} alt={imgAlt} height={"300px"}/>
+      <a href={hrefDeploy}>Traveler's Choice</a>
+      <a href={hrefGitHub}>
+        <img src={githubLogo} alt="GitHub logo" height={"40px"}/>
+      </a>
     </div>
   );
 }

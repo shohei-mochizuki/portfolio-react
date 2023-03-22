@@ -1,41 +1,42 @@
 import React from 'react';
 import Project from './Project';
+import a from "../../images/pj15-traveler-review.jpg";
 
 export default function Portfolio() {
   
   const projects = [
     {
-      imgSrc: "../../images/pj15-traveler-review.jpg",
+      imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
-      imgSrc: "../../images/pj15-traveler-review.jpg",
+      imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
-      imgSrc: "../../images/pj15-traveler-review.jpg",
+      iimgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
-      imgSrc: "../../images/pj15-traveler-review.jpg",
+      imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
-      imgSrc: "../../images/pj15-traveler-review.jpg",
+      imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
-      imgSrc: "../../images/pj15-traveler-review.jpg",
+      imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
