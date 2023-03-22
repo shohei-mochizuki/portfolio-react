@@ -5,13 +5,6 @@ export default function Header({ currentPage, handlePageChange }) {
     <div>
       <h1>Shohei Mochizuki</h1>
       <ul className="nav nav-tabs">
-        {/* // FOR FUTURE DEVELOPMENT // <li className="nav-item">
-          <a
-            href="#home"
-            onClick={() => handlePageChange('Home')}
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-          >Home</a>
-        </li> */}
         <li className="nav-item">
           <a
             href="#about"
