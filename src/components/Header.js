@@ -7,16 +7,16 @@ export default function Header({ currentPage, handlePageChange }) {
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <a
-            href="#about"
-            onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+            href="#aboutme"
+            onClick={() => handlePageChange('AboutMe')}
+            className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
           >About Me</a>
         </li>
         <li className="nav-item">
           <a
-            href="#works"
-            onClick={() => handlePageChange('Works')}
-            className={currentPage === 'Works' ? 'nav-link active' : 'nav-link'}
+            href="#portfolio"
+            onClick={() => handlePageChange('Portfolio')}
+            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
           >Portfolio</a>
         </li>
         <li className="nav-item">
