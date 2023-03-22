@@ -2,7 +2,7 @@ import React from 'react';
 import githubLogo from '../../images/github.svg';
 import pjTravelerReview from '../../images/pj15-traveler-review.jpg';
 
-export default function Works() {
+export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
