@@ -9,6 +9,17 @@ import logoNode from '../../images/node.png';
 import logoReact from '../../images/react.svg';
 import logoApi from '../../images/api.svg';
 import logoHandlebars from '../../images/handlebars.png';
+import logoMySql from '../../images/mysql.png';
+import logoMongoDb from '../../images/mongodb.png';
+import logoGas from '../../images/gas.png';
+import logoGit from '../../images/git.svg';
+import logoGitHub from '../../images/github.svg';
+import logoVsCode from '../../images/vscode.svg';
+import logoPwa from '../../images/pwa.png';
+import logoPython from '../../images/python.svg';
+import logoR from '../../images/r.png';
+import logoBigQuery from '../../images/bigquery.png';
+import logoDataStudio from '../../images/datastudio.svg';
 
 export default function Resume() {
   return (
@@ -37,67 +48,67 @@ export default function Resume() {
                 <p>JavaScript</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/jquery.svg" width="50" height="50" />
+                <img src={logoJquery} width="50" height="50" />
                 <p>JQuery</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/node.png" width="70" height="50" />
+                <img src={logoNode} width="70" height="50" />
                 <p>Node</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/react.svg" width="50" height="50" />
+                <img src={logoReact} width="50" height="50" />
                 <p>React</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/api.svg" width="50" height="50" />
+                <img src={logoApi} width="50" height="50" />
                 <p>REST API</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/handlebars.png" width="50" height="50" />
+                <img src={logoHandlebars} width="50" height="50" />
                 <p>Handlebars</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/mysql.png" width="70" height="50" />
+                <img src={logoMySql} width="70" height="50" />
                 <p>MySQL</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/mongodb.png" width="50" height="50" />
+                <img src={logoMongoDb} width="50" height="50" />
                 <p>MongoDB</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/gas.png" width="50" height="50" />
+                <img src={logoGas} width="50" height="50" />
                 <p>Google App Script</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/git.svg" width="50" height="50" />
+                <img src={logoGit} width="50" height="50" />
                 <p>Git</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/github.svg" width="50" height="50" />
+                <img src={logoGitHub} width="50" height="50" />
                 <p>GitHub</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/vscode.svg" width="50" height="50" />
+                <img src={logoVsCode} width="50" height="50" />
                 <p>VS Code</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/pwa.png" width="70" height="50" />
+                <img src={logoPwa} width="70" height="50" />
                 <p>PWA</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/python.svg" width="50" height="50" />
+                <img src={logoPython} width="50" height="50" />
                 <p>Python</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/r.png" width="50" height="50" />
+                <img src={logoR} width="50" height="50" />
                 <p>R</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/bigquery1.png" width="50" height="50" />
+                <img src={logoBigQuery} width="50" height="50" />
                 <p>BigQuery</p>
               </div>
               <div className="col my-4">
-                <img src="./assets/logos/datastudio.svg" width="50" height="50" />
+                <img src={logoDataStudio} width="50" height="50" />
                 <p>DataStudio</p>
               </div>
             </div>
