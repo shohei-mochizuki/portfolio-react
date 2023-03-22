@@ -1,10 +1,10 @@
 import React from 'react';
-import facePhoto from '../../images/shohei.jpg';
+import resume from '../../document/resume.pdf';
 
 export default function Resume() {
   return (
     <div>
-      <img src={facePhoto} alt="Shohei" height={"200px"}/>
+      <button><a href={resume}>Resume</a></button>
       <h5>Hello World 🌎 ! I'm</h5>
       <h2>Shohei Mochizuki</h2>
       <p><small >Pronunciation: show-hay moe-chee-zoo-key | Pronuous: he/his/him</small></p>
