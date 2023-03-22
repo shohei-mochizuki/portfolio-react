@@ -18,7 +18,7 @@ export default function Portfolio() {
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
-      iimgSrc: a,
+      imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
