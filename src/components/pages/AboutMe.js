@@ -1,7 +1,7 @@
 import React from 'react';
 import facePhoto from '../../images/shohei.jpg';
 
-export default function About() {
+export default function AboutMe() {
   return (
     <div>
       <img src={facePhoto} alt="Shohei" height={"200px"}/>
