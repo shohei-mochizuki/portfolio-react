@@ -2,6 +2,7 @@ import React from 'react';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 
 export default function Navigation({currentPage}) {
 
@@ -10,8 +11,10 @@ export default function Navigation({currentPage}) {
       return <AboutMe />
     } else if (currentPage === "Portfolio") {
       return <Portfolio />
-    } else {
+    } else if (currentPage === "Contact") {
       return <Contact />
+    } else {
+      return <Resume />
     }
   };
   
