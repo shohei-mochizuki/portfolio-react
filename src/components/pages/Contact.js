@@ -110,7 +110,7 @@ const handleFormSubmit = (e) => {
         )}
         <div className="form-group mt-3">
           <label for="inputMessage">Message</label>
-          <input
+          <textarea
             value={message}
             name="message"
             onChange={handleInputChange}
