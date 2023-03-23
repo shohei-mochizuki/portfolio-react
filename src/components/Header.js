@@ -6,7 +6,7 @@ export default function Header({ currentPage, handlePageChange }) {
     <div>
       <nav className="navbar navbar-expand-md bg-primary px-3">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#home">
+          <a className="navbar-brand" href="#aboutme">
             <img src={logoSite} width="30" height="30" className="d-inline-block align-text-bottom" alt="" />
             <span className="fs-3 fw-semibold ms-2 text-white">Shohei Mochizuki</span>
           </a>

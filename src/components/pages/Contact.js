@@ -71,50 +71,62 @@ const handleFormSubmit = (e) => {
   };
 
   return (
-    <div>
+    <div className="container my-5">
       <h2>Contact</h2>
       <form className="form">
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          onBlur={validation}
-          type="text"
-          placeholder="Enter your name"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          onBlur={validation}
-          type="email"
-          placeholder="Enter your email"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          onBlur={validation}
-          type="text"
-          placeholder="Enter your message"
-        />
-        <button type="button" onClick={handleFormSubmit} disabled={disableButton}>Send</button>
+        <div className="form-group mt-3">
+          <label for="inputName">Name</label>
+          <input
+            value={name}
+            name="name"
+            onChange={handleInputChange}
+            onBlur={validation}
+            type="text"
+            placeholder="Enter your name"
+            className="form-control"
+          />
+        </div>
+        {errorName && (
+        <div>
+          <p className="error-text text-danger ms-1">{errorName}</p>
+        </div>
+        )}
+        <div className="form-group mt-3">
+          <label for="inputEmail">Email</label>
+          <input
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            onBlur={validation}
+            type="email"
+            placeholder="Enter your email"
+            className="form-control"
+          />
+        </div>
+        {errorEmail && (
+        <div>
+          <p className="error-text text-danger ms-1">{errorEmail}</p>
+        </div>
+        )}
+        <div className="form-group mt-3">
+          <label for="inputMessage">Message</label>
+          <input
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            onBlur={validation}
+            type="text"
+            placeholder="Enter your message"
+            className="form-control"
+          />
+        </div>
+        {errorMessage && (
+        <div>
+          <p className="error-text text-danger ms-1">{errorMessage}</p>
+        </div>
+        )}
+        <button type="button" onClick={handleFormSubmit} disabled={disableButton} className="btn btn-primary mt-3">Send</button>
       </form>
-      {errorName && (
-        <div>
-          <p className="error-text">{errorName}</p>
-        </div>
-      )}
-      {errorEmail && (
-        <div>
-          <p className="error-text">{errorEmail}</p>
-        </div>
-      )}
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
     </div>
   );
 }
