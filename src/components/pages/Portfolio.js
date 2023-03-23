@@ -1,5 +1,7 @@
 import React from 'react';
 import Project from './Project';
+
+// Import application images from another folder
 import pj19 from "../../images/pj19-texteditor-pwa.png";
 import pj15 from "../../images/pj15-traveler-review.jpg";
 import pj11 from "../../images/pj11-notetaker.png";
@@ -9,6 +11,7 @@ import pj4 from "../../images/pj4-interactive-quiz.png";
 
 export default function Portfolio() {
   
+  // Put all project/application data (as objects) into 'Projects' array
   const projects = [
     {
       title: "Text Editor - Progressive Web Application",
