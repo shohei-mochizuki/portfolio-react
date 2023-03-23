@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logoSite from '../images/website.png'
 
 export default function Header({ currentPage, handlePageChange }) {
+  
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const showMenu = () => {
+    console.log(`BEFORE: ${toggleMenu}`);
+    setToggleMenu(!toggleMenu);
+    console.log(`AFTER: ${toggleMenu}`);
+  }
+  
   return (
     <div>
       <nav className="navbar navbar-expand-md bg-warning px-3">
@@ -10,10 +19,10 @@ export default function Header({ currentPage, handlePageChange }) {
             <img src={logoSite} width="30" height="30" className="d-inline-block align-text-bottom" alt="" />
             <span className="fs-3 fw-bold ms-2 text-white">Shohei Mochizuki</span>
           </div>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={showMenu}>
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className={toggleMenu ? "collapse navbar-collapse show" : "collapse navbar-collapse"}>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a 
