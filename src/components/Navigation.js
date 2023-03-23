@@ -6,6 +6,7 @@ import Resume from './pages/Resume';
 
 export default function Navigation({currentPage}) {
 
+  // Render content depending on the state variable "currentPage"
   const renderPage = (currentPage) => {
     if (currentPage === "AboutMe") {
       return <AboutMe />
