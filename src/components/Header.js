@@ -3,12 +3,12 @@ import logoSite from '../images/website.png'
 
 export default function Header({ currentPage, handlePageChange }) {
   
+  // This is to switch show/unvisible of the toggle menu (when window is small) in the navigation bar
   const [toggleMenu, setToggleMenu] = useState(false);
 
+  // When the toggle menu is clicked, switch the state from false -> true or true -> false
   const showMenu = () => {
-    console.log(`BEFORE: ${toggleMenu}`);
     setToggleMenu(!toggleMenu);
-    console.log(`AFTER: ${toggleMenu}`);
   }
   
   return (
