@@ -6,36 +6,42 @@ export default function Portfolio() {
   
   const projects = [
     {
+      title: a,
       imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
+      title: a,
       imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
+      title: a,
       imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
+      title: a,
       imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
+      title: a,
       imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
       hrefGitHub: "https://github.com/shohei-mochizuki/TravelersChoice",
     },
     {
+      title: a,
       imgSrc: a,
       imgAlt: "Traveler's choice image",
       hrefDeploy: "https://github.com/shohei-mochizuki/TravelersChoice",
@@ -48,7 +54,7 @@ export default function Portfolio() {
       <div className="row row-cols-lg-2 row-cols-1 text-center">
         {projects.map(item => (
         <div className="col my-3">
-          <Project imgSrc={item.imgSrc} imgAlt={item.imgAlt} hrefDeploy={item.hrefDeploy} hrefGitHub={item.hrefGitHub} />
+          <Project title={item.title} imgSrc={item.imgSrc} imgAlt={item.imgAlt} hrefDeploy={item.hrefDeploy} hrefGitHub={item.hrefGitHub} />
         </div>
         ))}
       </div>
