@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 export default function PortfolioContainer() {
 
-  const [currentPage, setCurrentPage] = useState('AboutMe'); // Set the About page as landing page
+  const [currentPage, setCurrentPage] = useState('AboutMe'); // Set the About Me page as landing page
 
   const handlePageChange = (page) => setCurrentPage(page);
 
