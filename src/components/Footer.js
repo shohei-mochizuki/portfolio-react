@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Import logos from another folder to use them for <a> tags' hrefs
 import linkedinLogo from '../images/linkedin.png';
 import githubLogo from '../images/github.svg';
 import twitterLogo from '../images/twitter.svg';
