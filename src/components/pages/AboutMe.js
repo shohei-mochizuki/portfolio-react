@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Import photo from another folder
 import facePhoto from '../../images/shohei.jpg';
 
 export default function AboutMe() {
