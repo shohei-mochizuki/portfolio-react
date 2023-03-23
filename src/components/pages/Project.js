@@ -1,7 +1,9 @@
 import React from 'react';
+
+// Import GitHub logo to use it in a link to repo pages
 import githubLogo from "../../images/github.svg"
 
-export default function Project({title, imgSrc, imgAlt, hrefDeploy, hrefGitHub}) {
+export default function Project({title, imgSrc, imgAlt, hrefDeploy, hrefGitHub}) { // Destructure props object 
   return (
     <div className="position-relative">
       <img src={imgSrc} alt={imgAlt} height={"300px"} className="opacity-100 border border-3 border-dark rounded-4" />
