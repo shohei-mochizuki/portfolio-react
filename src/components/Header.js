@@ -4,7 +4,7 @@ import logoSite from '../images/website.png'
 export default function Header({ currentPage, handlePageChange }) {
   return (
     <div>
-      <nav className="navbar navbar-expand-md bg-primary px-3">
+      <nav className="navbar navbar-expand-md bg-dark px-3">
         <div className="container-fluid">
           <a className="navbar-brand" href="#aboutme">
             <img src={logoSite} width="30" height="30" className="d-inline-block align-text-bottom" alt="" />
