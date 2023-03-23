@@ -5,7 +5,7 @@ import twitterLogo from '../images/twitter.svg';
 
 export default function Footer() {
   return (
-    <div className="bg-secondary p-3 m-0">
+    <div className="bg-warning p-3 m-0">
       <div className="row justify-content-center">
         <div className="col text-end">
           <a href="https://www.linkedin.com/in/shoheimochizuki"><img src={linkedinLogo} alt="LinkedIn logo" height={"40px"}/></a>
