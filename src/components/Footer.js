@@ -5,18 +5,18 @@ import twitterLogo from '../images/twitter.svg';
 
 export default function Footer() {
   return (
-    <div>
-      <ul className="nav nav-tabs">
-        <li className="nav-item">
+    <div className="bg-warning p-4 m-0">
+      <div className="row justify-content-center">
+        <div className="col text-end">
           <a href="https://www.linkedin.com/in/shoheimochizuki"><img src={linkedinLogo} alt="LinkedIn logo" height={"40px"}/></a>
-        </li>
-        <li className="nav-item">
+        </div>
+        <div className="col text-center">
           <a href="https://github.com/shohei-mochizuki"><img src={githubLogo} alt="GitHub logo" height={"40px"}/></a>
-        </li>
-        <li className="nav-item">
+        </div>
+        <div className="col text-start">
           <a href="https://twitter.com/ShoheiYYZ"><img src={twitterLogo} alt="Twitter logo" height={"40px"}/></a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 }
