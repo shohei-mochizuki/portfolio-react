@@ -43,11 +43,11 @@ export default function Portfolio() {
     }];
   
   return (
-    <div>
+    <div className="container my-5">
       <h2>Portfolio</h2>
-      <div>
+      <div className="row row-cols-lg-2 row-cols-1 text-center">
         {projects.map(item => (
-        <div>
+        <div className="col my-3">
           <Project imgSrc={item.imgSrc} imgAlt={item.imgAlt} hrefDeploy={item.hrefDeploy} hrefGitHub={item.hrefGitHub} />
         </div>
         ))}
