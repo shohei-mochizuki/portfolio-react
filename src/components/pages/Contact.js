@@ -1,26 +1,25 @@
 import React, { useState } from 'react';
 
-// Here we import a helper function that will check if the email is valid
+// Import a helper function that will check if the email is valid
 import { validateEmail } from '../../utils/helpers';
 
 export default function Contact() {
   // Create state variables for the fields in the form
-  // We are also setting their initial values to an empty string
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [errorName, setErrorName] = useState('');
-  const [errorEmail, setErrorEmail] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-  const [disableButton, setDisableButton] = useState(true);
+  const [errorName, setErrorName] = useState(''); // Error message for Name section
+  const [errorEmail, setErrorEmail] = useState(''); // Error message for Email section
+  const [errorMessage, setErrorMessage] = useState(''); // Error message for Message section
+  const [disableButton, setDisableButton] = useState(true); // This is for disabling 'send' button when one of error messages is shown
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
-    const { target } = e; // <==> const target = e.target
+    const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
+    // Based on the input type, we set the state of either name, email, and message
     if (inputType === 'name') {
       setName(inputValue);
     } else if (inputType === 'email') {
@@ -31,7 +30,8 @@ export default function Contact() {
   };
 
   const validation = (e) => {
-    const { target } = e; // <==> const target = e.target
+    // Validating the input when input area is out of focus
+    const { target } = e; 
     const inputType = target.name;
 
     if (inputType === 'name'){
@@ -54,6 +54,7 @@ export default function Contact() {
       }
     }
 
+    // When all validation is satisfied, un-disable the 'send' button
     if (name!=="" && validateEmail(email) && message!=="") {
       setDisableButton(false);
     } else {
@@ -64,7 +65,7 @@ export default function Contact() {
 
 const handleFormSubmit = (e) => { 
   e.preventDefault();
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    // Clear out the input after successful submission.
   setName('');
   setEmail('');
   setMessage('');
