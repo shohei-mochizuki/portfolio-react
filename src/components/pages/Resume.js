@@ -1,5 +1,9 @@
 import React from 'react';
+
+// Import document from another folder
 import resume from '../../document/resume.pdf';
+
+// Import logos from another folder
 import logoHtml from '../../images/html.svg';
 import logoCss from '../../images/css.svg';
 import logoBootstrap from '../../images/bootstrap.svg';
@@ -37,67 +41,67 @@ export default function Resume() {
         <div className="container text-center">
           <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2">
             <div className="col my-4">
-              <img src={logoHtml} width="50" height="50" />
+              <img src={logoHtml} width="50" height="50" alt="logo" />
               <p>HTML</p>
             </div>
             <div className="col my-4">
-              <img src={logoCss} width="50" height="50" />
+              <img src={logoCss} width="50" height="50" alt="logo" />
               <p>CSS</p>
             </div>
             <div className="col my-4">
-              <img src={logoBootstrap} width="60" height="50" />
+              <img src={logoBootstrap} width="60" height="50" alt="logo" />
               <p>Bootstrap</p>
             </div>
             <div className="col my-4">
-              <img src={logoJavascript} width="50" height="50" />
+              <img src={logoJavascript} width="50" height="50" alt="logo" />
               <p>JavaScript</p>
             </div>
             <div className="col my-4">
-              <img src={logoJquery} width="50" height="50" />
+              <img src={logoJquery} width="50" height="50" alt="logo" />
               <p>JQuery</p>
             </div>
             <div className="col my-4">
-              <img src={logoNode} width="70" height="50" />
+              <img src={logoNode} width="70" height="50" alt="logo" />
               <p>Node</p>
             </div>
             <div className="col my-4">
-              <img src={logoReact} width="50" height="50" />
+              <img src={logoReact} width="50" height="50" alt="logo" />
               <p>React</p>
             </div>
             <div className="col my-4">
-              <img src={logoApi} width="50" height="50" />
+              <img src={logoApi} width="50" height="50" alt="logo" />
               <p>REST API</p>
             </div>
             <div className="col my-4">
-              <img src={logoHandlebars} width="50" height="50" />
+              <img src={logoHandlebars} width="50" height="50" alt="logo" />
               <p>Handlebars</p>
             </div>
             <div className="col my-4">
-              <img src={logoMySql} width="70" height="50" />
+              <img src={logoMySql} width="70" height="50" alt="logo" />
               <p>MySQL</p>
             </div>
             <div className="col my-4">
-              <img src={logoMongoDb} width="50" height="50" />
+              <img src={logoMongoDb} width="50" height="50" alt="logo" />
               <p>MongoDB</p>
             </div>
             <div className="col my-4">
-              <img src={logoGas} width="50" height="50" />
+              <img src={logoGas} width="50" height="50" alt="logo" />
               <p>Google App Script</p>
             </div>
             <div className="col my-4">
-              <img src={logoGit} width="50" height="50" />
+              <img src={logoGit} width="50" height="50" alt="logo" />
               <p>Git</p>
             </div>
             <div className="col my-4">
-              <img src={logoGitHub} width="50" height="50" />
+              <img src={logoGitHub} width="50" height="50" alt="logo" />
               <p>GitHub</p>
             </div>
             <div className="col my-4">
-              <img src={logoVsCode} width="50" height="50" />
+              <img src={logoVsCode} width="50" height="50" alt="logo" />
               <p>VS Code</p>
             </div>
             <div className="col my-4">
-              <img src={logoPwa} width="70" height="45" />
+              <img src={logoPwa} width="70" height="45" alt="logo" />
               <p>PWA</p>
             </div>
           </div>
@@ -108,27 +112,27 @@ export default function Resume() {
         <div className="container text-center">
           <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-2">
             <div className="col my-4">
-              <img src={logoPython} width="50" height="50" />
+              <img src={logoPython} width="50" height="50" alt="logo" />
               <p>Python</p>
             </div>
             <div className="col my-4">
-              <img src={logoJupyter} width="40" height="50" />
+              <img src={logoJupyter} width="40" height="50" alt="logo" />
               <p>Jupyter</p>
             </div>
             <div className="col my-4">
-              <img src={logoR} width="50" height="50" />
+              <img src={logoR} width="50" height="50" alt="logo" />
               <p>R</p>
             </div>
             <div className="col my-4">
-              <img src={logoBigQuery} width="50" height="50" />
+              <img src={logoBigQuery} width="50" height="50" alt="logo" />
               <p>BigQuery</p>
             </div>
             <div className="col my-4">
-              <img src={logoDataStudio} width="50" height="50" />
+              <img src={logoDataStudio} width="50" height="50" alt="logo" />
               <p>DataStudio</p>
             </div>
             <div className="col my-4">
-              <img src={logoTableau} width="50" height="50" />
+              <img src={logoTableau} width="50" height="50" alt="logo" />
               <p>Tableau</p>
             </div>
           </div>
