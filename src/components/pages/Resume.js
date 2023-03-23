@@ -29,7 +29,7 @@ export default function Resume() {
       <h2>Resume & Skills</h2>
       <div className="m-5 d-flex justify-content-center">    
         <button type="button" className="btn btn-secondary">
-          <a href={resume} className="text-reset text-decoration-none">Resume</a>
+          <a href={resume} target="_blank" rel="noopener noreferrer" className="text-reset text-decoration-none">Resume</a>
         </button>
       </div>
       <h3>Coding skills</h3>
