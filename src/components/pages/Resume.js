@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Import document from another folder
-import resume from '../../document/resume.pdf';
+import resume from '../../document/Resume_Shohei-Mochizuki.pdf';
 
 // Import logos from another folder
 import logoHtml from '../../images/html.svg';
